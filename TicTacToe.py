@@ -49,10 +49,10 @@ def oTurn():
 
 def winner():
     if xs in win:
-        print "X's Wins!!"
+        print "X's Wins!!!"
         quit()
     if os in win:
-        print "O's Win!!"
+        print "O's Win!!!"
         quit()
 
 display()
