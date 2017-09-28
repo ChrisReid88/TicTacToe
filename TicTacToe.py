@@ -24,6 +24,9 @@ win = [[0,1,2],
 #First player/X's turn
 def xTurn():
     x = raw_input("Player X choose a number: ")
+    while len(x) != 1 or (not x.isdigit()):
+        print "Not a valid choice."
+        x = raw_input("Player X choose a number: ")
     x = int(x)
 
     if board[x] != 'x' and board[x] != 'o':
@@ -37,6 +40,9 @@ def xTurn():
 
 def oTurn():
     o = raw_input("Player O choose a number: ")
+    while len(o) != 1 or (not o.isdigit()):
+        print "Not a valid choice."
+        o = raw_input("Player O choose a number: ")
     o = int(o)
 
     if board[o] != 'x' and board[o] != 'o':
